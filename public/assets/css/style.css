@@ -1,0 +1,128 @@
+/* -------------------------- Body ------------------------------ */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #d2d2d2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url('/assets/image/Background.jpg');
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 14, 14, 0.8);
+    z-index: -1;
+}
+
+/* ------------------------- Header ---------------------------- */
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* ----------------------- Main Content ------------------------ */
+/* Select Date */
+#date-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#date-picker {
+    width: 20%;
+    padding: 10px;
+    color: #0a3c91;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/* Button */
+#fetch-apod {
+    width: 20%;
+    padding: 13px;
+    background-color: #0a3c91;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fetch-apod:hover {
+    background-color: #3172e2;
+}
+
+/* Loading Sign */
+#loading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#loading::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* ----------------------- APOD ------------------------ */
+#apod-info {
+    background-color: #0c1d3611;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.apod-title {
+    color: #ffffff;
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+/* Images */
+.apod-media {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+/* Videos */
+.apod-video {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+/* Content */
+.apod-explanation {
+    text-align: justify;
+}
+
+/* ----------------------- Footer ------------------------ */
+.footer {
+    margin-right: 20px;
+    text-align: right;
+    padding: 10px 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INM420SAA_Chun Yin Ma_NASA APOD Viewer</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!----------------------- Header---------------------------->
+    <header>
+        <img src="assets/image/Logo.png" alt="NASA Logo" id="logo">
+        <h1>Welcome to NASA APOD Viewer</h1>
+    </header>
+
+    <!------------------------ Main ---------------------------->
+    <main>
+        <!-- Select Date & Button -->
+        <section id="date-selection">
+            <label for="date-picker">Select a date:</label>
+            <input type="date" id="date-picker">
+            <button id="fetch-apod">View More</button>
+        </section>
+
+        <!-- Show Loading -->
+        <div id="loading" style="display: none;">Loading...</div>
+
+        <!-- APOD -->
+        <section id="apod-display">
+            <div id="apod-info">
+                <p>Select a date and click "View APOD" to see NASA's Astronomy Picture of the Day.</p>
+            </div>
+        </section>
+    </main>
+
+    <!------------------------ Footer ---------------------------->
+    <footer class="footer">
+        <p>Data provided by <br>NASA's Astronomy Picture of the Day API</p>
+    </footer>
+
+    <!-- js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
